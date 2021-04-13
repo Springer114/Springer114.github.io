@@ -1,0 +1,75 @@
+body {
+    background-image: url('./images/night_sky.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.chevron {
+    height: 10rem;
+    background-color: rgb(255, 255, 255, .85);
+    clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 100%, 0 100%);
+}
+
+.chevron-overlay {
+    height: 10rem;
+    background-color: rgb(0, 0, 0, .85);
+    clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
+}
+
+.container {
+    background-color: rgb(255, 255, 255, .85);
+    padding-top: 2rem;
+}
+
+.header {
+    margin: 17rem 0 7rem;
+    color: white;
+    font-size: 16px;
+}
+
+.about img {
+    width: 5rem;
+    margin: .5rem;
+}
+
+
+/* Media Queries */
+@media (min-width: 576px) {
+    .header {
+        margin: 25rem 0 10rem;
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        margin: 30rem 0 15rem;
+        color: white;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        margin: 40rem 0 25rem;
+        color: white;
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        margin: 30rem 0 15rem;
+        color: white;
+        font-size: 30px;
+    }
+}

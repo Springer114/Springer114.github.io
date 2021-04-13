@@ -3,11 +3,21 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
-            <a href=""><img src="" alt="LinkedIn"/></a>
-            <a href=""><img src="" alt="GitHub"/></a>
-            <a href=""><img src="" alt="Treehouse"/></a>
-            <a href=""><img src="" alt="Email"/></a>
-            <footer>Zackary Springer ©2021</footer>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/zackary-springer-427a96202"><img src="" alt="LinkedIn"/></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Springer114"><img src="" alt="GitHub"/></a>
+                </li>
+                <li>
+                    <a href="https://teamtreehouse.com/zackspringer"><img src="" alt="Treehouse"/></a>
+                </li>
+                <li>
+                    <a href="mailto:springerzack04@yahoo.com"><img src="" alt="Email"/></a>
+                </li>
+                <p>&copy;{(new Date().getFullYear())} Zackary Springer</p>
+            </ul>
         </div>
     )
 }
