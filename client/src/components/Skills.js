@@ -24,8 +24,9 @@ const Skills = () => {
     const filterKeyChangeHandler = key => () => setFilterKey(key)
 
     return (
-        <div>
-            <div class="button-group filter-button-group">
+        <div className="skills-container">
+            <h3>Skills:</h3>
+            <div className="button-group filter-button-group">
                 <button onClick={filterKeyChangeHandler('*')}>Show All</button>
                 <button onClick={filterKeyChangeHandler('language')}>Languages</button>
                 <button onClick={filterKeyChangeHandler('framework')}>Frameworks</button>
@@ -36,6 +37,18 @@ const Skills = () => {
                 <button onClick={filterKeyChangeHandler('mern')}>MERN</button>
             </div>
             <div className="filter-container">
+                <div className="filter-item markup language">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png" alt="orange html shield"/>
+                </div>
+                <div className="filter-item stylesheet language">
+                    <img src="https://icon-library.com/images/css3-icon/css3-icon-28.jpg" alt="blue css shield"/>
+                </div>
+                <div className="filter-item javascript programming language">
+                    <img src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg" alt="yellow javascript shield"/>
+                </div>
+                <div className="filter-item javascript library">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/jquery-10-1175155.png" alt="blue jquery icon"/>
+                </div>
                 <div className="filter-item python programming language">
                     <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt="icon for python coding language blue and yellow snakes"/>
                 </div>
@@ -68,18 +81,6 @@ const Skills = () => {
                 </div>
                 <div className="filter-item mern database">
                     <img src="http://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/e5eee315a17de0d7f56117077eb71fa9/mongo.png" alt="green and brown shield shape with leaf mongodb"/>
-                </div>
-                <div className="filter-item markup language">
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png" alt="orange html shield"/>
-                </div>
-                <div className="filter-item stylesheet language">
-                    <img src="https://icon-library.com/images/css3-icon/css3-icon-28.jpg" alt="blue css shield"/>
-                </div>
-                <div className="filter-item javascript programming language">
-                    <img src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg" alt="yellow javascript shield"/>
-                </div>
-                <div className="filter-item javascript library">
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/jquery-10-1175155.png" alt="blue jquery icon"/>
                 </div>
             </div>
         </div>

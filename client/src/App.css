@@ -12,13 +12,29 @@ ul {
     list-style: none;
 }
 
+button {
+    margin: .5rem;
+}
+
 .chevron {
     height: 10rem;
     background-color: rgb(255, 255, 255, .85);
     clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 100%, 0 100%);
 }
 
+.chevron2 {
+    height: 10rem;
+    background-color: rgb(255, 255, 255, .85);
+    clip-path: polygon(0 0, 100% 0, 100% 15%, 50% 90%, 0 15%);
+}
+
 .chevron-overlay {
+    height: 10rem;
+    background-color: rgb(0, 0, 0, .85);
+    clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
+}
+
+.chevron-overlay2 {
     height: 10rem;
     background-color: rgb(0, 0, 0, .85);
     clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
@@ -37,7 +53,40 @@ ul {
 
 .about img {
     width: 5rem;
-    margin: .5rem;
+    margin: 1rem;
+}
+
+.filter-container {
+    margin: 1rem 1rem;
+}
+
+.alternate-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 1rem;
+    overflow-x: hidden;
+    margin: 5rem;
+}
+
+.alternate-sections .text-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alternate-sections .img-link {
+    margin: 2rem;
+    width: 100%;
+}
+
+.projects h2 {
+    margin-top: 4rem;
+}
+
+.project-github {
+    width: 2rem;
 }
 
 /* Media Queries */
@@ -63,6 +112,31 @@ ul {
         color: white;
         font-size: 28px;
     }
+
+    .alternate-sections {
+        column-gap: 2rem;
+    }
+
+    .alternate-sections .img-link {
+        margin: 2rem;
+        width: 100%;
+    }
+
+    .alternate-sections .text {
+        padding: 2rem;
+        margin: 4rem;
+        width: 100%;
+    }
+
+    .alternate-sections .text-img {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .alternate-sections .text-img:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -70,5 +144,13 @@ ul {
         margin: 30rem 0 15rem;
         color: white;
         font-size: 30px;
+    }
+
+    .about {
+        margin: 0 5rem;
+    }
+
+    .filter-container {
+        margin: 1rem 10rem;
     }
 }

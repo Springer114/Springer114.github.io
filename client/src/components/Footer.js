@@ -3,6 +3,9 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
+            <div className="chevron2">
+                <div className="chevron-overlay2"></div>
+            </div>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/zackary-springer-427a96202"><img src="" alt="LinkedIn"/></a>

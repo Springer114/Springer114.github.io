@@ -1,34 +1,40 @@
 import React from 'react'
+import gif2 from '../images/event_planner.gif'
+import gif3 from '../images/dev_playground.gif'
 
 const Projects = () => {
     return (
         <div>
-            <div>
-                <section>
-                    <a href="/"><img src="" alt=""/></a>
-                    <div>
-                        <h3>Dossier</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt officia, delectus ipsum quaerat est atque sint. Ipsa totam ipsum est, placeat odio at.</p>
+            <div className="projects">
+                <h2>Projects</h2>
+                <div className="alternate-sections">
+                    <div className="text-img">
+                        <div className="text">
+                            <h3>Dossier</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt officia, delectus ipsum quaerat est atque sint. Ipsa totam ipsum est, placeat odio at.</p>
+                            <a href="https://github.com/Springer114/Dossier"><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
+                        </div>
+                        <a href="/"><img className="img-link" src={gif2} alt=""/></a>
                     </div>
-                </section>
-                <section>
-                    <a href="/"><img src="" alt=""/></a>
-                    <div>
-                        <h3>JQZ Events</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt officia, delectus ipsum quaerat est atque sint. Ipsa totam ipsum est, placeat odio at.</p>
+                    <div className="text-img">
+                        <div className="text">
+                            <h3>JQZ Events</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt officia, delectus ipsum quaerat est atque sint. Ipsa totam ipsum est, placeat odio at.</p>
+                            <a href="https://github.com/johnmalbert/EventPlanner"><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
+                        </div>
+                        <a href="/"><img className="img-link" src={gif2} alt=""/></a>
                     </div>
-                </section>
-                <section>
-                    <a href="/"><img src="" alt=""/></a>
-                    <div>
-                        <h3>JQZ Developer-Playground</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt officia, delectus ipsum quaerat est atque sint. Ipsa totam ipsum est, placeat odio at.</p>
+                    <div className="text-img">
+                        <div className="text">
+                            <h3>JQZ Developer-Playground</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt officia, delectus ipsum quaerat est atque sint. Ipsa totam ipsum est, placeat odio at.</p>
+                            <a href="https://github.com/johnmalbert/JQZ-Developer-Playground"><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
+                        </div>
+                        <a href="/"><img className="img-link" src={gif3} alt=""/></a>
                     </div>
-                </section>
+                </div>
             </div>
-            <footer>
-                <a href="/">Here's My Resume</a>
-            </footer>
+            <div className="chevron-overlay"></div>
         </div>
     )
 }
