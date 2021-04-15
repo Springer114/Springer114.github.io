@@ -16,6 +16,13 @@ button {
     margin: .5rem;
 }
 
+input, textarea {
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: .4rem;
+    width: 80%;
+}
+
 .chevron {
     height: 10rem;
     background-color: rgb(255, 255, 255, .85);
@@ -30,13 +37,13 @@ button {
 
 .chevron-overlay {
     height: 10rem;
-    background-color: rgb(0, 0, 0, .85);
+    background-color: rgb(0, 0, 0);
     clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
 }
 
 .chevron-overlay2 {
     height: 10rem;
-    background-color: rgb(0, 0, 0, .85);
+    background-color: rgb(0, 0, 0);
     clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
 }
 
@@ -78,7 +85,7 @@ button {
 
 .alternate-sections .img-link {
     margin: 2rem;
-    width: 100%;
+    width: 80%;
 }
 
 .projects h2 {
@@ -86,6 +93,24 @@ button {
 }
 
 .project-github {
+    width: 2rem;
+}
+
+.contact-container {
+    padding: 2rem;
+}
+
+.footer-container {
+    margin: 2rem;
+    color: white;
+}
+
+.footer-container a {
+    margin: 2rem;
+    color: white;
+}
+
+.footer-container img {
     width: 2rem;
 }
 
@@ -119,7 +144,7 @@ button {
 
     .alternate-sections .img-link {
         margin: 2rem;
-        width: 100%;
+        width: 80%;
     }
 
     .alternate-sections .text {

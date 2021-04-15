@@ -12,7 +12,7 @@ const Projects = () => {
                         <div className="text">
                             <h3>Dossier</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt officia, delectus ipsum quaerat est atque sint. Ipsa totam ipsum est, placeat odio at.</p>
-                            <a href="https://github.com/Springer114/Dossier"><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
+                            <a href="https://github.com/Springer114/Dossier" target="_blank" rel='noreferrer noopener'><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
                         </div>
                         <a href="/"><img className="img-link" src={gif2} alt=""/></a>
                     </div>
@@ -20,7 +20,7 @@ const Projects = () => {
                         <div className="text">
                             <h3>JQZ Events</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt officia, delectus ipsum quaerat est atque sint. Ipsa totam ipsum est, placeat odio at.</p>
-                            <a href="https://github.com/johnmalbert/EventPlanner"><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
+                            <a href="https://github.com/johnmalbert/EventPlanner" target="_blank" rel='noreferrer noopener'><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
                         </div>
                         <a href="/"><img className="img-link" src={gif2} alt=""/></a>
                     </div>
@@ -28,7 +28,7 @@ const Projects = () => {
                         <div className="text">
                             <h3>JQZ Developer-Playground</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt officia, delectus ipsum quaerat est atque sint. Ipsa totam ipsum est, placeat odio at.</p>
-                            <a href="https://github.com/johnmalbert/JQZ-Developer-Playground"><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
+                            <a href="https://github.com/johnmalbert/JQZ-Developer-Playground" target="_blank" rel='noreferrer noopener'><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
                         </div>
                         <a href="/"><img className="img-link" src={gif3} alt=""/></a>
                     </div>

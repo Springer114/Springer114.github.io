@@ -2,14 +2,24 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div>
+        <div className="contact-container">
             <h2>Contact</h2>
             <form action="" method="post">
-                <input type="text" name="name" placeholder="Name"/>
-                <input type="email" name="email" placeholder="Email Address"/>
-                <input type="text" name="subject" placeholder="Subject"/>
-                <textarea name="message" cols="30" rows="10" placeholder="Your message"></textarea>
-                <button>Send Message</button>
+                <div>
+                    <input type="text" name="name" placeholder="Name"/>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Email Address"/>
+                </div>
+                <div>
+                    <input type="text" name="subject" placeholder="Subject"/>
+                </div>
+                <div>
+                    <textarea name="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+                <div>
+                    <button>Send Message</button>
+                </div>
             </form>
         </div>
     )
