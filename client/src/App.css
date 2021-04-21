@@ -124,6 +124,10 @@ input, textarea {
     width: 2rem;
 }
 
+.contact-error {
+    color: red;
+}
+
 /* Media Queries */
 @media (min-width: 576px) {
     .header {
