@@ -14,13 +14,23 @@ ul {
 
 button {
     margin: .5rem;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    border: 1px solid black;
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(190, 190, 190);
 }
 
 input, textarea {
     padding: .5rem;
     margin: .5rem;
+    border: 1px solid black;
     border-radius: .4rem;
-    width: 80%;
+    width: 50%;
 }
 
 .chevron {
