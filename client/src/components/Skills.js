@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Isotope from 'isotope-layout'
-import ReactLogo from '../images/logo192.png'
+import logo from '../logo.svg'
 
 const Skills = () => {
 
@@ -71,7 +71,7 @@ const Skills = () => {
                     <img src="https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-512.png" alt="blue and orange mysql with dolphin"/>
                 </div>
                 <div className="filter-item mern javascript library">
-                    <img src={ReactLogo} alt="blue atom react symbol"/>
+                    <img src={logo} alt="blue atom react symbol"/>
                 </div>
                 <div className="filter-item mern framework">
                     <img src="https://buttercms.com/static/images/tech_banners/ExpressJS.png" alt="express wording with js in yellow box"/>
