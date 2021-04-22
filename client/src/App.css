@@ -68,13 +68,19 @@ input, textarea {
     font-size: 16px;
 }
 
-.about img {
-    width: 5rem;
-    margin: 1rem;
+.skills-container {
+    height: 25rem;
 }
 
 .filter-container {
     margin: 1rem 1rem;
+}
+
+.filter-item img {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    
 }
 
 .alternate-sections {
@@ -110,6 +116,10 @@ input, textarea {
     padding: 2rem;
 }
 
+.contact-error {
+    color: red;
+}
+
 .footer-container {
     margin: 2rem;
     color: white;
@@ -122,10 +132,6 @@ input, textarea {
 
 .footer-container img {
     width: 2rem;
-}
-
-.contact-error {
-    color: red;
 }
 
 /* Media Queries */
