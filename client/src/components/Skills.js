@@ -53,91 +53,49 @@ const Skills = () => {
 			</div>
 			<div className="filter-container">
 				<div className="filter-item markup language">
-					<img
-						src={html}
-						alt="orange html shield"
-					/>
+					<img src={html} alt="orange html shield"/>
 				</div>
 				<div className="filter-item stylesheet language">
-					<img
-						src={css}
-						alt="blue css shield"
-					/>
+					<img src={css} alt="blue css shield"/>
 				</div>
 				<div className="filter-item javascript programming language">
-					<img
-						src={js}
-						alt="yellow javascript shield"
-					/>
+					<img src={js} alt="yellow javascript shield"/>
 				</div>
 				<div className="filter-item javascript library">
-					<img
-						src={jquery}
-						alt="blue jquery icon"
-					/>
+					<img src={jquery} alt="blue jquery icon"/>
 				</div>
 				<div className="filter-item python programming language">
-					<img
-						src={python}
-						alt="icon for python coding language blue and yellow snakes"
-					/>
+					<img src={python} alt="icon for python coding language blue and yellow snakes"/>
 				</div>
 				<div className="filter-item python framework">
-					<img
-						src={django}
-						alt="icon for django framework green letters d and j"
-					/>
+					<img src={django} alt="icon for django framework green letters d and j"/>
 				</div>
 				<div className="filter-item python framework">
-					<img
-						src={flask}
-						alt="icon for flask framwork"
-					/>
+					<img src={flask} alt="icon for flask framwork"/>
 				</div>
 				<div className="filter-item python database">
-					<img
-						src={sqlite}
-						alt="icon for sqlite"
-					/>
+					<img src={sqlite} alt="icon for sqlite"/>
 				</div>
 				<div className="filter-item c-sharp programming language">
-					<img
-						src={csharp}
-						alt="C# logo in purple hexagon"
-					/>
+					<img src={csharp} alt="C# logo in purple hexagon"/>
 				</div>
 				<div className="filter-item c-sharp framework">
-					<img
-						src={dotnet}
-						alt=".net core in purple circle"
-					/>
+					<img src={dotnet} alt=".net core in purple circle"/>
 				</div>
 				<div className="filter-item c-sharp database">
-					<img
-						src={mysqlLogo}
-						alt="blue and orange mysql with dolphin"
-					/>
+					<img src={mysqlLogo} alt="blue and orange mysql with dolphin"/>
 				</div>
 				<div className="filter-item mern javascript library">
 					<img src={logo} alt="blue atom react symbol" />
 				</div>
 				<div className="filter-item mern framework">
-					<img
-						src={express}
-						alt="express wording with js in yellow box"
-					/>
+					<img src={express} alt="express wording with js in yellow box"/>
 				</div>
 				<div className="filter-item mern javascript runtime environment">
-					<img
-						src={node}
-						alt="node with green pentagon as the o"
-					/>
+					<img src={node} alt="node with green pentagon as the o"/>
 				</div>
 				<div className="filter-item mern database">
-					<img
-						src={mongo}
-						alt="green and brown shield shape with leaf mongodb"
-					/>
+					<img src={mongo} alt="green and brown shield shape with leaf mongodb"/>
 				</div>
 			</div>
 		</div>
