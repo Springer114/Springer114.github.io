@@ -6,15 +6,15 @@ import js from "../images/js.png"
 import jquery from "../images/jquery.webp"
 import python from "../images/python.webp"
 import django from "../images/django.png"
-import flask from "../images/flask_icon.png"
+import flask from "../images/flask.png"
 import sqlite from "../images/sqlite.webp"
 import csharp from "../images/csharp.png"
 import dotnet from "../images/asp.netcore.png"
-import mysqlLogo from "../images/mysql.webp"
-import logo from "../logo.svg"
-import express from "../images/ExpressJS.png"
+import mysqlLogo from "../images/mysql.png"
+import react from "../images/react.png"
+import express from "../images/express.png"
 import node from "../images/nodejs.png"
-import mongo from "../images/mongo.png"
+import mongo from "../images/mongodb.png"
 
 const Skills = () => {
 
@@ -86,7 +86,7 @@ const Skills = () => {
 					<img src={mysqlLogo} alt="blue and orange mysql with dolphin"/>
 				</div>
 				<div className="filter-item mern javascript library">
-					<img src={logo} alt="blue atom react symbol" />
+					<img src={react} alt="blue atom react symbol" />
 				</div>
 				<div className="filter-item mern framework">
 					<img src={express} alt="express wording with js in yellow box"/>
