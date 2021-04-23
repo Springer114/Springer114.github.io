@@ -80,7 +80,6 @@ input, textarea {
     width: 5rem;
     height: 5rem;
     margin: 1rem;
-    
 }
 
 .alternate-sections {
@@ -168,8 +167,8 @@ input, textarea {
     }
 
     .alternate-sections .text {
-        padding: 2rem;
-        margin: 4rem;
+        padding: 3rem;
+        margin: 3rem;
         width: 100%;
     }
 
