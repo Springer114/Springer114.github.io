@@ -33,6 +33,10 @@ input, textarea {
     width: 50%;
 }
 
+span {
+    font-weight: bold;
+}
+
 .chevron {
     height: 10rem;
     background-color: rgb(255, 255, 255, .85);
@@ -42,24 +46,24 @@ input, textarea {
 .chevron2 {
     height: 10rem;
     background-color: rgb(255, 255, 255, .85);
-    clip-path: polygon(0 0, 100% 0, 100% 15%, 50% 90%, 0 15%);
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 50% 95%, 0 20%);
 }
 
 .chevron-overlay {
-    height: 10rem;
-    background-color: rgb(0, 0, 0);
-    clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
+    height: 11rem;
+    background-color: rgb(0, 0, 0, .85);
+    clip-path: polygon(0 5%, 50% 75%, 100% 5%, 100% 20%, 50% 90%, 0 20%);
 }
 
 .chevron-overlay2 {
     height: 10rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, .85);
     clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
 }
 
 .container {
     background-color: rgb(255, 255, 255, .85);
-    padding-top: 2rem;
+    padding-top: .5rem;
 }
 
 .header {
@@ -68,8 +72,8 @@ input, textarea {
     font-size: 16px;
 }
 
-.skills-container {
-    height: 25rem;
+.about {
+    margin: 1rem;
 }
 
 .filter-container {
@@ -77,8 +81,8 @@ input, textarea {
 }
 
 .filter-item img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     margin: 1rem;
 }
 
@@ -88,7 +92,7 @@ input, textarea {
     grid-template-rows: 1fr;
     row-gap: 1rem;
     overflow-x: hidden;
-    margin: 5rem;
+    margin: 1rem 2rem 1rem;
 }
 
 .alternate-sections .text-img {
@@ -99,20 +103,19 @@ input, textarea {
 }
 
 .alternate-sections .img-link {
-    margin: 2rem;
-    width: 80%;
+    width: 100%;
+}
+.alternate-sections .project-link {
+    margin: 1rem;
+    width: 100%;
 }
 
-.projects h2 {
-    margin-top: 4rem;
+.project-tech {
+    font-style: italic;
 }
 
 .project-github {
     width: 2rem;
-}
-
-.contact-container {
-    padding: 2rem;
 }
 
 .contact-error {
@@ -125,7 +128,7 @@ input, textarea {
 }
 
 .footer-container a {
-    margin: 2rem;
+    margin: 1rem;
     color: white;
 }
 
@@ -162,8 +165,11 @@ input, textarea {
     }
 
     .alternate-sections .img-link {
-        margin: 2rem;
-        width: 80%;
+        width: 100%;
+    }
+
+    .alternate-sections .project-link {
+        width: 100%;
     }
 
     .alternate-sections .text {

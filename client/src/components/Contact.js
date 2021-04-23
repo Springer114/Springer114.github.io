@@ -31,6 +31,12 @@ const Contact = () => {
                 alert("Oops, message failed to send.")
                 console.log('Failed to send...', error);
         });
+        setContact({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+        });
     };
 
     return (
@@ -38,18 +44,18 @@ const Contact = () => {
             <h2>Contact</h2>
             <form onSubmit={submitHandler}>
                 <div>
-                    <input type="text" name="name" placeholder="Name" onChange={errorHandler} />
+                    <input type="text" name="name" placeholder="Name" onChange={errorHandler} value={contact.name}/>
                     <p className="contact-error">{(contact.name.length > 1 || contact.name.length === 0) ? "" : "Name must be at least 2 characters."}</p>
                 </div>
                 <div>
-                    <input type="email" name="email" placeholder="Email Address" onChange={errorHandler}/>
+                    <input type="email" name="email" placeholder="Email Address" onChange={errorHandler} value={contact.email}/>
                     <p className="contact-error"> {(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) ? "" : "You have entered an invalid email address."}</p>
                 </div>
                 <div>
-                    <input type="text" name="subject" placeholder="Subject" onChange={errorHandler}/>
+                    <input type="text" name="subject" placeholder="Subject" onChange={errorHandler} value={contact.subject}/>
                 </div>
                 <div>
-                    <textarea name="message" cols="30" rows="10" placeholder="Your message" onChange={errorHandler}></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Your message" onChange={errorHandler} value={contact.message}></textarea>
                     <p className="contact-error">{(contact.message.length > 1 || contact.message.length === 0) ? "" : "Message must be at least 2 characters."}</p>
                 </div>
                 <div>
