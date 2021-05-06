@@ -1,13 +1,14 @@
 import React from 'react'
 import Skills from './Skills'
+import Pdf from '../images/MyOfficialResume.pdf'
 
 const About = () => {
     return (
         <div>
             <div className="about">
                 <h2>About</h2>
-                <p>I love to learn. Not only do I like learning about new material but learning about better ways to do things. I am always looking for the best solution to any problem. I spent a good portion of my working career as an Electrician. I also had worked in many different trades and industries before hand. Gaining useful experience with each job. The pandemic brought me new oppurtunities to figure a better path for myself.</p>
-                <a href="/">Here's My Resume</a>
+                <p>I am an inquisitive software engineer that has a labor intensive work history. I am always striving to find the best solutions to any task and was able to showcase that through my work as an Electrician. Now I am able to show that through the applications that I build. Given a chance to change course through the pandemic, I am proud to see the fruition of my hard work on an ever expanding platform.</p>
+                <a href={Pdf} target="_blank" rel='noreferrer noopener'>Here's My Resume</a>
                 <Skills />
             </div>
             <div className="chevron-overlay"></div>
