@@ -14,9 +14,6 @@ const Header = () => {
                     <div className="mini-chevron"></div>
                 </Link>
             </div>
-            <div className="chevron">
-                <div className="chevron-overlay"></div>
-            </div>
         </div>
     )
 }

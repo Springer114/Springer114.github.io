@@ -37,20 +37,23 @@ span {
     font-weight: bold;
 }
 
+.container {
+    clip-path: polygon(0 0, 50% 2.8%, 100% 0, 100% 96.75%, 50% 99.8%, 0 96.75%);
+    background-color: rgb(255, 255, 255, .85);
+}
+
 .chevron {
     height: 10rem;
-    background-color: rgb(255, 255, 255, .85);
     clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 100%, 0 100%);
 }
 
 .chevron2 {
     height: 10rem;
-    background-color: rgb(255, 255, 255, .85);
     clip-path: polygon(0 0, 100% 0, 100% 20%, 50% 95%, 0 20%);
 }
 
 .chevron-overlay {
-    height: 11rem;
+    height: 10rem;
     background-color: rgb(0, 0, 0, .85);
     clip-path: polygon(0 5%, 50% 75%, 100% 5%, 100% 20%, 50% 90%, 0 20%);
 }
@@ -83,23 +86,15 @@ span {
     animation-delay: 0.3s;
 }
 
-.mini-chevron:hover{
-    background-color: rgb(0, 0, 0);
-}
-
-.container {
-    background-color: rgb(255, 255, 255, .85);
-    padding-top: .5rem;
-}
-
 .header {
-    margin: 16rem 0 10rem;
+    margin: 12rem 0 10rem;
     color: white;
     font-size: 16px;
 }
 
 .about {
     margin: 1rem;
+    
 }
 
 .filter-container {
@@ -164,22 +159,41 @@ span {
 
 /* Media Queries */
 @media (min-width: 576px) {
+    .container {
+        clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 96.75%, 50% 99.9%, 0 96.75%);
+        background-color: rgb(255, 255, 255, .85);
+    }
+
     .header {
-        margin: 25rem 0 10rem;
+        margin: 22rem 0 15rem;
         color: white;
         font-size: 14px;
     }
 }
 
 @media (min-width: 768px) {
+    .container {
+        clip-path: polygon(0 0, 50% 2.85%, 100% 0, 100% 96.75%, 50% 99.85%, 0 96.75%);
+        background-color: rgb(255, 255, 255, .85);
+    }
+
     .header {
-        margin: 30rem 0 15rem;
+        margin: 25rem 0 15rem;
         color: white;
         font-size: 24px;
+    }
+
+    .filter-container {
+        margin: 1rem 3.5rem;
     }
 }
 
 @media (min-width: 992px) {
+    .container {
+        clip-path: polygon(0 0, 50% 3.25%, 100% 0, 100% 96.5%, 50% 100%, 0 96.5%);
+        background-color: rgb(255, 255, 255, .85);
+    }
+
     .header {
         margin: 40rem 0 25rem;
         color: white;
@@ -216,6 +230,11 @@ span {
 }
 
 @media (min-width: 1200px) and (min-height: 975px) {
+    .container {
+        clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 96.25%, 50% 100%, 0 96.25%);
+        background-color: rgb(255, 255, 255, .85);
+    }
+
     .header {
         margin: 20rem 0 15rem;
         color: white;
@@ -223,11 +242,12 @@ span {
     }
 
     .about {
-        margin: 0 5rem;
+        max-width: 70rem;
+        margin: 0 auto;
     }
 
     .filter-container {
-        margin: 1rem 10rem;
+        margin: 1rem auto;
     }
 }
 
@@ -236,14 +256,6 @@ span {
         margin: 23rem 0 20rem;
         color: white;
         font-size: 30px;
-    }
-
-    .about {
-        margin: 0 5rem;
-    }
-
-    .filter-container {
-        margin: 1rem 10rem;
     }
 }
 

@@ -62,6 +62,9 @@ const Contact = () => {
                     <button>Send Message</button>
                 </div>
             </form>
+            <div className="chevron2">
+                <div className="chevron-overlay2"></div>
+            </div>
         </div>
     )
 }
