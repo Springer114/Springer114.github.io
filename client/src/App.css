@@ -2,7 +2,7 @@ body {
     background-image: url('./images/night_sky.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    -webkit-background-size: cover;
     background-attachment: fixed;
     margin: 0;
     text-align: center;
@@ -67,7 +67,7 @@ span {
 }
 
 .header {
-    margin: 17rem 0 7rem;
+    margin: 16rem 0 10rem;
     color: white;
     font-size: 16px;
 }
@@ -83,7 +83,7 @@ span {
 .filter-item img {
     width: 4rem;
     height: 4rem;
-    margin: 1rem;
+    margin: 1.2rem;
 }
 
 .alternate-sections {
@@ -189,9 +189,25 @@ span {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (min-height: 975px) {
     .header {
-        margin: 30rem 0 15rem;
+        margin: 25rem 0 15rem;
+        color: white;
+        font-size: 30px;
+    }
+
+    .about {
+        margin: 0 5rem;
+    }
+
+    .filter-container {
+        margin: 1rem 10rem;
+    }
+}
+
+@media (min-width: 1200px) and (min-height: 1095px) {
+    .header {
+        margin: 32rem 0 15rem;
         color: white;
         font-size: 30px;
     }
