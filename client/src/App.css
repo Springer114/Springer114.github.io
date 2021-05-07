@@ -2,7 +2,7 @@ body {
     background-image: url('./images/night_sky.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: cover;
+    background-size: cover;
     background-attachment: fixed;
     margin: 0;
     text-align: center;
@@ -59,6 +59,32 @@ span {
     height: 10rem;
     background-color: rgb(0, 0, 0, .85);
     clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
+}
+
+.mini-chevron {
+    margin: auto;
+    width: 3rem;
+    height: 1rem;
+    background-color: rgb(255, 255, 255);
+    clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
+    animation: chevron-wave 1s infinite;
+    animation-direction: alternate;
+}
+
+.mini-chevron:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.mini-chevron:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.mini-chevron:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.mini-chevron:hover{
+    background-color: rgb(0, 0, 0);
 }
 
 .container {
@@ -191,7 +217,7 @@ span {
 
 @media (min-width: 1200px) and (min-height: 975px) {
     .header {
-        margin: 25rem 0 15rem;
+        margin: 20rem 0 15rem;
         color: white;
         font-size: 30px;
     }
@@ -207,7 +233,7 @@ span {
 
 @media (min-width: 1200px) and (min-height: 1095px) {
     .header {
-        margin: 32rem 0 15rem;
+        margin: 23rem 0 20rem;
         color: white;
         font-size: 30px;
     }
@@ -218,5 +244,17 @@ span {
 
     .filter-container {
         margin: 1rem 10rem;
+    }
+}
+
+@keyframes chevron-wave {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
     }
 }
