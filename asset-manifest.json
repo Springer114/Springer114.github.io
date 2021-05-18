@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2ffeb4e6.chunk.css",
+    "main.css": "/static/css/main.0fe43fc0.chunk.css",
     "main.js": "/static/js/main.0be37f7e.chunk.js",
     "main.js.map": "/static/js/main.0be37f7e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.83ac8ed1.js",
@@ -10,7 +10,7 @@
     "static/js/3.2854aa43.chunk.js": "/static/js/3.2854aa43.chunk.js",
     "static/js/3.2854aa43.chunk.js.map": "/static/js/3.2854aa43.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2ffeb4e6.chunk.css.map": "/static/css/main.2ffeb4e6.chunk.css.map",
+    "static/css/main.0fe43fc0.chunk.css.map": "/static/css/main.0fe43fc0.chunk.css.map",
     "static/js/2.889db739.chunk.js.LICENSE.txt": "/static/js/2.889db739.chunk.js.LICENSE.txt",
     "static/media/MyOfficialResume.4d2a6472.pdf": "/static/media/MyOfficialResume.4d2a6472.pdf",
     "static/media/asp.netcore.12c7610b.png": "/static/media/asp.netcore.12c7610b.png",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.83ac8ed1.js",
     "static/js/2.889db739.chunk.js",
-    "static/css/main.2ffeb4e6.chunk.css",
+    "static/css/main.0fe43fc0.chunk.css",
     "static/js/main.0be37f7e.chunk.js"
   ]
 }
