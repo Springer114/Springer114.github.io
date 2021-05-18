@@ -104,7 +104,11 @@ span {
 
 .about {
     margin: 1rem;
-    
+}
+
+.about img {
+    margin: 10px;
+    width: 50px;
 }
 
 .filter-container {

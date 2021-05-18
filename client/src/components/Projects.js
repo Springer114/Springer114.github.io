@@ -32,7 +32,7 @@ const Projects = () => {
                         <div className="text">
                             <h3>JQZ Developer-Playground</h3>
                             <p className="project-tech"><span>Technologies:</span> MERN Full-stack - MongoDB, Express, React, Node.js, HTML/CSS, Bootstrap, MaterialU</p>
-                            <p>A place for developers to show off their stuff. Read the latest tech news, view or share projects, create a portfolio, algorithm challenges, and some games.</p>
+                            <p>A place for developers to show off their stuff. Read the latest tech news, view or share projects, create a portfolio, try your knowledge at some algorithm challenges, or play some games.</p>
                             <p><span>Collaborators:</span> <a href="https://johnmalbert.github.io/" target="_blank" rel='noreferrer noopener'>John Albert</a>, <a href="https://qlathe.github.io/#" target="_blank" rel='noreferrer noopener'>Quinn Lathe</a>, Zack Springer</p>
                             <a href="https://github.com/johnmalbert/JQZ-Developer-Playground" target="_blank" rel='noreferrer noopener'><img className="project-github" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/github-512.png" alt="github octocat"/></a>
                         </div>
