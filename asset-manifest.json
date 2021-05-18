@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f9582e58.chunk.css",
-    "main.js": "/static/js/main.0be37f7e.chunk.js",
-    "main.js.map": "/static/js/main.0be37f7e.chunk.js.map",
+    "main.js": "/static/js/main.84313e07.chunk.js",
+    "main.js.map": "/static/js/main.84313e07.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.83ac8ed1.js",
     "runtime-main.js.map": "/static/js/runtime-main.83ac8ed1.js.map",
     "static/js/2.889db739.chunk.js": "/static/js/2.889db739.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/index.html",
     "static/css/main.f9582e58.chunk.css.map": "/static/css/main.f9582e58.chunk.css.map",
     "static/js/2.889db739.chunk.js.LICENSE.txt": "/static/js/2.889db739.chunk.js.LICENSE.txt",
-    "static/media/MyOfficialResume.4d2a6472.pdf": "/static/media/MyOfficialResume.4d2a6472.pdf",
+    "static/media/MyOfficialResume.4f8e0045.pdf": "/static/media/MyOfficialResume.4f8e0045.pdf",
     "static/media/asp.netcore.12c7610b.png": "/static/media/asp.netcore.12c7610b.png",
     "static/media/csharp.224a84bc.png": "/static/media/csharp.224a84bc.png",
     "static/media/css.83780bc2.png": "/static/media/css.83780bc2.png",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.83ac8ed1.js",
     "static/js/2.889db739.chunk.js",
     "static/css/main.f9582e58.chunk.css",
-    "static/js/main.0be37f7e.chunk.js"
+    "static/js/main.84313e07.chunk.js"
   ]
 }
