@@ -1,11 +1,21 @@
 body {
-    background-image: url('./images/night_sky.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
     text-align: center;
+}
+
+body:after {
+    background-image: url('./images/night_sky.jpg');
+    background-position: center;
+    content:"";
+    position:fixed; /* stretch a fixed position to the whole screen */
+    top:0;
+    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    z-index:-1; /* needed to keep in the background */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 ul {
@@ -159,6 +169,26 @@ span {
 
 /* Media Queries */
 @media (min-width: 576px) {
+    body {
+        text-align: center;
+    }
+    
+    body:after {
+        background-image: url('./images/night_sky.jpg');
+        background-position: center;
+        content:"";
+        position:fixed; /* stretch a fixed position to the whole screen */
+        top:0;
+        height:100vh; /* fix for mobile browser address bar appearing disappearing */
+        left:0;
+        right:0;
+        z-index:-1; /* needed to keep in the background */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
     .container {
         clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 96.75%, 50% 99.9%, 0 96.75%);
         background-color: rgb(255, 255, 255, .85);
@@ -172,6 +202,26 @@ span {
 }
 
 @media (min-width: 768px) {
+    body {
+        text-align: center;
+    }
+    
+    body:after {
+        background-image: url('./images/night_sky.jpg');
+        background-position: center;
+        content:"";
+        position:fixed; /* stretch a fixed position to the whole screen */
+        top:0;
+        height:100vh; /* fix for mobile browser address bar appearing disappearing */
+        left:0;
+        right:0;
+        z-index:-1; /* needed to keep in the background */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
     .container {
         clip-path: polygon(0 0, 50% 2.85%, 100% 0, 100% 96.75%, 50% 99.85%, 0 96.75%);
         background-color: rgb(255, 255, 255, .85);
@@ -189,6 +239,16 @@ span {
 }
 
 @media (min-width: 992px) {
+    body {
+        background-image: url('./images/night_sky.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        text-align: center;
+    }
+
     .container {
         clip-path: polygon(0 0, 50% 3.25%, 100% 0, 100% 96.5%, 50% 100%, 0 96.5%);
         background-color: rgb(255, 255, 255, .85);
@@ -230,6 +290,16 @@ span {
 }
 
 @media (min-width: 1200px) and (min-height: 975px) {
+    body {
+        background-image: url('./images/night_sky.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        text-align: center;
+    }
+
     .container {
         clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 96.25%, 50% 100%, 0 96.25%);
         background-color: rgb(255, 255, 255, .85);
@@ -252,6 +322,16 @@ span {
 }
 
 @media (min-width: 1200px) and (min-height: 1095px) {
+    body {
+        background-image: url('./images/night_sky.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        text-align: center;
+    }
+
     .header {
         margin: 23rem 0 20rem;
         color: white;
