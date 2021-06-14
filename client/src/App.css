@@ -48,7 +48,7 @@ span {
 }
 
 .container {
-    clip-path: polygon(0 0, 50% 2.8%, 100% 0, 100% 96.75%, 50% 99.8%, 0 96.75%);
+    clip-path: polygon(0 0, 50% 2.4%, 100% 0, 100% 97.2%, 50% 99.8%, 0 97.2%);
     background-color: rgb(255, 255, 255, .85);
 }
 
@@ -203,7 +203,7 @@ span {
     }
 
     .container {
-        clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 96.75%, 50% 99.9%, 0 96.75%);
+        clip-path: polygon(0 0, 50% 2.55%, 100% 0, 100% 97.15%, 50% 99.9%, 0 97.15%);
         background-color: rgb(255, 255, 255, .85);
     }
 
@@ -236,7 +236,7 @@ span {
     }
 
     .container {
-        clip-path: polygon(0 0, 50% 2.85%, 100% 0, 100% 96.75%, 50% 99.85%, 0 96.75%);
+        clip-path: polygon(0 0, 50% 2.4%, 100% 0, 100% 97.2%, 50% 99.85%, 0 97.2%);
         background-color: rgb(255, 255, 255, .85);
     }
 
@@ -263,7 +263,7 @@ span {
     }
 
     .container {
-        clip-path: polygon(0 0, 50% 3.25%, 100% 0, 100% 96.5%, 50% 100%, 0 96.5%);
+        clip-path: polygon(0 0, 50% 2.75%, 100% 0, 100% 96.9%, 50% 100%, 0 96.9%);
         background-color: rgb(255, 255, 255, .85);
     }
 
@@ -314,7 +314,7 @@ span {
     }
 
     .container {
-        clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 96.25%, 50% 100%, 0 96.25%);
+        clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 96.6%, 50% 99.9%, 0 96.6%);
         background-color: rgb(255, 255, 255, .85);
     }
 
