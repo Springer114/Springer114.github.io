@@ -9,9 +9,11 @@ const Header = () => {
                 <h1>Hi! I'm Zack Springer.</h1>
                 <p>Full Stack Software Engineer</p>
                 <Link to="about" smooth={true}>
-                    <div className="mini-chevron"></div>
-                    <div className="mini-chevron"></div>
-                    <div className="mini-chevron"></div>
+                    <div className="mini-link">
+                        <div className="mini-chevron"></div>
+                        <div className="mini-chevron"></div>
+                        <div className="mini-chevron"></div>
+                    </div>
                 </Link>
             </div>
         </div>

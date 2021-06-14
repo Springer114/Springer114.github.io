@@ -5,13 +5,13 @@ body {
 body:after {
     background-image: url('./images/night_sky.jpg');
     background-position: center;
-    content:"";
-    position:fixed; /* stretch a fixed position to the whole screen */
-    top:0;
-    height:100vh; /* fix for mobile browser address bar appearing disappearing */
-    left:0;
-    right:0;
-    z-index:-1; /* needed to keep in the background */
+    content: "";
+    position: fixed; /* stretch a fixed position to the whole screen */
+    top: 0;
+    height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+    left: 0;
+    right: 0;
+    z-index: -1; /* needed to keep in the background */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -82,6 +82,15 @@ span {
     clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
     animation: chevron-wave 1s infinite;
     animation-direction: alternate;
+}
+
+.mini-link {
+    width: 3rem;
+    display: table-footer-group;
+}
+
+.mini-link:hover {
+    cursor: pointer;
 }
 
 .mini-chevron:nth-child(1) {
@@ -180,13 +189,13 @@ span {
     body:after {
         background-image: url('./images/night_sky.jpg');
         background-position: center;
-        content:"";
-        position:fixed; /* stretch a fixed position to the whole screen */
-        top:0;
-        height:100vh; /* fix for mobile browser address bar appearing disappearing */
-        left:0;
-        right:0;
-        z-index:-1; /* needed to keep in the background */
+        content: "";
+        position: fixed; /* stretch a fixed position to the whole screen */
+        top: 0;
+        height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+        left: 0;
+        right: 0;
+        z-index: -1; /* needed to keep in the background */
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -213,13 +222,13 @@ span {
     body:after {
         background-image: url('./images/night_sky.jpg');
         background-position: center;
-        content:"";
-        position:fixed; /* stretch a fixed position to the whole screen */
-        top:0;
-        height:100vh; /* fix for mobile browser address bar appearing disappearing */
-        left:0;
-        right:0;
-        z-index:-1; /* needed to keep in the background */
+        content: "";
+        position: fixed; /* stretch a fixed position to the whole screen */
+        top: 0;
+        height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+        left: 0;
+        right: 0;
+        z-index: -1; /* needed to keep in the background */
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
