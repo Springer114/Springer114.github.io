@@ -1,101 +1,175 @@
-import React, { useState, useEffect, useRef } from "react"
-import Isotope from "isotope-layout"
-import html from "../images/html.png"
-import css from "../images/css.png"
-import js from "../images/js.png"
-import jquery from "../images/jquery.webp"
-import python from "../images/python.webp"
-import django from "../images/django.png"
-import flask from "../images/flask.png"
-import sqlite from "../images/sqlite.webp"
-import csharp from "../images/csharp.png"
-import dotnet from "../images/asp.netcore.png"
-import mysqlLogo from "../images/mysql.png"
-import react from "../images/react.png"
-import express from "../images/express.png"
-import node from "../images/nodejs.png"
-import mongo from "../images/mongodb.png"
+import React from "react"
+import reactLogo from '../images/react-logo.png'
+import htmlLogo from '../images/html-logo.png'
+import cssLogo from '../images/css-logo.png'
+import javascriptLogo from '../images/javascript-logo.png'
+import csharpLogo from '../images/csharp-logo.png'
+import pythonLogo from '../images/python-logo.png'
+import nodejsLogo from '../images/nodejs-logo.png'
+import aspdotnetcoreLogo from '../images/aspdotnetcore-logo.png'
+import bootstrapLogo from '../images/bootstrap-logo.png'
+import jqueryLogo from '../images/jquery-logo.png'
+import sassLogo from '../images/sass-logo.png'
+import mysqlLogo from '../images/mysql-logo.png'
+import sqliteLogo from '../images/sqlite-logo.png'
+import mongodbLogo from '../images/mongodb-logo.png'
+import mongooseLogo from '../images/mongoose-logo.png'
+import gitLogo from '../images/git-logo.png'
+import githubLogo from '../images/GitHub-Mark-Dark.png'
+import vscodeLogo from '../images/vscode-logo.png'
 
 const Skills = () => {
 
-    const isotope = useRef();
-	const [filterKey, setFilterKey] = useState("*");
-
-	useEffect(() => {
-		isotope.current = new Isotope(".filter-container", {
-			itemSelector: ".filter-item",
-			layoutMode: "fitRows"
-		});
-		return () => isotope.current.destroy();
-	}, []);
-
-	useEffect(() => {
-		filterKey === "*"
-			? isotope.current.arrange({ filter: `*` })
-			: isotope.current.arrange({ filter: `.${filterKey}` });
-	}, [filterKey]);
-
-	const filterKeyChangeHandler = (key) => () => setFilterKey(key);
-
-
 	return (
-		<div className="skills-container">
-			<h3>Skills:</h3>
-			<div className="button-group filter-button-group">
-				<button onClick={filterKeyChangeHandler("*")}>Show All</button>
-				<button onClick={filterKeyChangeHandler("language")}>Languages</button>
-				<button onClick={filterKeyChangeHandler("framework")}>Frameworks</button>
-				<button onClick={filterKeyChangeHandler("library")}>Libraries</button>
-				<button onClick={filterKeyChangeHandler("database")}>Databases</button>
-				<button onClick={filterKeyChangeHandler("python")}>Python</button>
-				<button onClick={filterKeyChangeHandler("c-sharp")}>C#</button>
-				<button onClick={filterKeyChangeHandler("mern")}>MERN</button>
-			</div>
-			<div className="filter-container">
-				<div className="filter-item markup language">
-					<img src={html} alt="orange html shield"/>
-				</div>
-				<div className="filter-item stylesheet language">
-					<img src={css} alt="blue css shield"/>
-				</div>
-				<div className="filter-item javascript programming language">
-					<img src={js} alt="yellow javascript shield"/>
-				</div>
-				<div className="filter-item javascript library">
-					<img src={jquery} alt="blue jquery icon"/>
-				</div>
-				<div className="filter-item python programming language">
-					<img src={python} alt="icon for python coding language blue and yellow snakes"/>
-				</div>
-				<div className="filter-item python framework">
-					<img src={django} alt="icon for django framework green letters d and j"/>
-				</div>
-				<div className="filter-item python framework">
-					<img src={flask} alt="icon for flask framwork"/>
-				</div>
-				<div className="filter-item python database">
-					<img src={sqlite} alt="icon for sqlite"/>
-				</div>
-				<div className="filter-item c-sharp programming language">
-					<img src={csharp} alt="C# logo in purple hexagon"/>
-				</div>
-				<div className="filter-item c-sharp framework">
-					<img src={dotnet} alt=".net core in purple circle"/>
-				</div>
-				<div className="filter-item c-sharp database">
-					<img src={mysqlLogo} alt="blue and orange mysql with dolphin"/>
-				</div>
-				<div className="filter-item mern javascript library">
-					<img src={react} alt="blue atom react symbol" />
-				</div>
-				<div className="filter-item mern framework">
-					<img src={express} alt="express wording with js in yellow box"/>
-				</div>
-				<div className="filter-item mern javascript runtime environment">
-					<img src={node} alt="node with green pentagon as the o"/>
-				</div>
-				<div className="filter-item mern database">
-					<img src={mongo} alt="green and brown shield shape with leaf mongodb"/>
+		<div className="skills">
+			<h2>Skills</h2>
+			<div className="skill-list">
+				<h4>Here's what I know how to use</h4>
+				<div className="skill-cards">
+					<div className="">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={htmlLogo} alt="html logo" />
+								<p>HTML</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={cssLogo} alt="css logo" />
+								<p>CSS</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={javascriptLogo} alt="javascript logo" />
+								<p>JavaScript</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={csharpLogo} alt="c sharp logo" />
+								<p>C#</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://docs.python.org/3/" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={pythonLogo} alt="python logo" />
+								<p>Python</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={reactLogo} alt="react logo" />
+								<p>React</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://nodejs.org/en/docs/" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={nodejsLogo} alt="node.js logo" />
+								<p>Node.js</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-5.0" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={aspdotnetcoreLogo} alt="asp.net core logo" />
+								<p>ASP.NET Core</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={bootstrapLogo} alt="bootstrap logo" />
+								<p>Bootstrap</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://api.jquery.com/" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={jqueryLogo} alt="jquery logo" />
+								<p>JQuery</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://sass-lang.com/documentation" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={sassLogo} alt="sass logo" />
+								<p>Sass</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://dev.mysql.com/doc/" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={mysqlLogo} alt="mysql logo" />
+								<p>MySQL</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://www.sqlite.org/docs.html" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={sqliteLogo} alt="sqlite logo" />
+								<p>SQLite</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://docs.mongodb.com/" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={mongodbLogo} alt="mongodb logo" />
+								<p>MongoDB</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://mongoosejs.com/docs/" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={mongooseLogo} alt="mongoose logo" />
+								<p>Mongoose</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://git-scm.com/doc" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={gitLogo} alt="git logo" />
+								<p>Git</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://docs.github.com/en" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={githubLogo} alt="github logo" />
+								<p>GitHub</p>
+							</button>
+						</a>
+					</div>
+					<div className="">
+						<a href="https://code.visualstudio.com/docs" target="_blank" rel='noreferrer noopener'>
+							<button>
+								<img src={vscodeLogo} alt="vs code logo" />
+								<p>VS Code</p>
+							</button>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

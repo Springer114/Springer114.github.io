@@ -4,18 +4,18 @@ import { Link } from 'react-scroll'
 const Header = () => {
 
     return (
-        <div>
-            <div className="header">
-                <h1>Hi! I'm Zack Springer.</h1>
-                <p>Full Stack Software Engineer</p>
-                <Link to="about" smooth={true}>
-                    <div className="mini-link">
-                        <div className="mini-chevron"></div>
-                        <div className="mini-chevron"></div>
-                        <div className="mini-chevron"></div>
-                    </div>
-                </Link>
-            </div>
+        <div className="header">
+            <nav>
+                <div className="myName">
+                    <h1>Zackary Springer</h1>
+                </div>
+                <div className="links">
+                    <Link to="about" smooth={true}>About</Link>
+                    <Link to="projects" smooth={true}>Projects</Link>
+                    <Link to="skills" smooth={true}>Skills</Link>
+                    <Link to="contact" smooth={true}>Contact</Link>
+                </div>
+            </nav>
         </div>
     )
 }
