@@ -1,16 +1,19 @@
 import React from 'react'
-import githubImg from '../images/github-11-xxl.png'
+import githubImg from '../images/GitHub-Mark-Light.png'
+import linkedin from '../images/linkedin.png'
+import treehouse from '../images/treehouse.png'
+import mail from '../images/mail.png'
 
 const Footer = () => {
     return (
-        <div>
-            <div className="footer-container">
-                <a href="https://www.linkedin.com/in/zackary-springer-427a96202" target="_blank" rel='noreferrer noopener'><img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="LinkedIn"/></a>
+        <div className="footer">
+            <div className="footer-links">
+                <a href="https://www.linkedin.com/in/zackary-springer-427a96202" target="_blank" rel='noreferrer noopener'><img src={linkedin} alt="LinkedIn"/></a>
                 <a href="https://github.com/Springer114" target="_blank" rel='noreferrer noopener'><img src={githubImg} alt="GitHub"/></a>
-                <a href="https://teamtreehouse.com/zackspringer" target="_blank" rel='noreferrer noopener'><img src="https://symbols.getvecta.com/stencil_98/50_treehouse-icon.c220738d10.png" alt="Treehouse"/></a>
-                <a href="mailto:springerzack04@yahoo.com"><img src="https://www.pngkit.com/png/full/222-2226274_white-email-icon-png-download-mail-symbol-png.png" alt="Email"/></a>
-                <p>&copy;{(new Date().getFullYear())} Zackary Springer</p>
+                <a href="https://teamtreehouse.com/zackspringer" target="_blank" rel='noreferrer noopener'><img src={treehouse} alt="Treehouse"/></a>
+                <a href="mailto:springerzack04@yahoo.com"><img src={mail} alt="Email"/></a>
             </div>
+            <p>&copy;{(new Date().getFullYear())} Zackary Springer</p>
         </div>
     )
 }

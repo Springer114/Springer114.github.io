@@ -1,365 +1,267 @@
+:root {
+    --primary: #919636;
+    --secondary: #524A3A;
+    --tertiary: #FFFAE1;
+    --quaternary: #5A5F37;
+}
+
 body {
-    text-align: center;
+    padding-top: 4rem;
+    background-color: #353535;
+    color: lightgray;
+    font-family: 'IM Fell English SC', serif;
 }
 
-body:after {
-    background-image: url('./images/night_sky.jpg');
-    background-position: center;
-    content: "";
-    position: fixed; /* stretch a fixed position to the whole screen */
-    top: 0;
-    height: 100vh; /* fix for mobile browser address bar appearing disappearing */
-    left: 0;
-    right: 0;
-    z-index: -1; /* needed to keep in the background */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+h2 {
+    border-bottom: 3px solid black;
+    font-size: 30px;
 }
 
-ul {
-    list-style: none;
-}
-
-button {
-    margin: .5rem;
-    padding: .5rem 1rem;
-    border-radius: .4rem;
-    border: 1px solid black;
-    transition-duration: .4s;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(190, 190, 190);
-}
-
-input, textarea {
-    padding: .5rem;
-    margin: .5rem;
-    border: 1px solid black;
-    border-radius: .4rem;
-    width: 50%;
+h3 {
+    margin: .5rem 1rem;
 }
 
 span {
     font-weight: bold;
 }
 
-.container {
-    clip-path: polygon(0 0, 50% 2.4%, 100% 0, 100% 97.2%, 50% 99.8%, 0 97.2%);
-    background-color: rgb(255, 255, 255, .85);
-}
-
-.chevron {
-    height: 10rem;
-    clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 100%, 0 100%);
-}
-
-.chevron2 {
-    height: 10rem;
-    clip-path: polygon(0 0, 100% 0, 100% 20%, 50% 95%, 0 20%);
-}
-
-.chevron-overlay {
-    height: 10rem;
-    background-color: rgb(0, 0, 0, .85);
-    clip-path: polygon(0 5%, 50% 75%, 100% 5%, 100% 20%, 50% 90%, 0 20%);
-}
-
-.chevron-overlay2 {
-    height: 10rem;
-    background-color: rgb(0, 0, 0, .85);
-    clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
-}
-
-.mini-chevron {
-    margin: auto;
-    width: 3rem;
-    height: 1rem;
-    background-color: rgb(255, 255, 255);
-    clip-path: polygon(0 0, 50% 75%, 100% 0, 100% 15%, 50% 90%, 0 15%);
-    animation: chevron-wave 1s infinite;
-    animation-direction: alternate;
-}
-
-.mini-link {
-    width: 3rem;
-    display: table-footer-group;
-}
-
-.mini-link:hover {
-    cursor: pointer;
-}
-
-.mini-chevron:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.mini-chevron:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.mini-chevron:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.header {
-    margin: 12rem 0 10rem;
-    color: white;
-    font-size: 16px;
-}
-
-.about {
-    margin: 1rem;
-}
-
-.about img {
-    margin: 10px;
-    width: 50px;
-}
-
-.filter-container {
-    margin: 1rem 1rem;
-}
-
-.filter-item img {
-    width: 4rem;
-    height: 4rem;
-    margin: 1.2rem;
-}
-
-.alternate-sections {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 1rem;
-    overflow-x: hidden;
-    margin: 1rem 2rem 1rem;
-}
-
-.alternate-sections .text-img {
+/* ------------------------------------------------------------------------ */
+nav {
+    position: fixed;
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    padding: 1rem 0;
+    background-color: var(--quaternary);
+    color: lightgray;
     align-items: center;
-    flex-direction: column;
+    z-index: 9999;
+    box-shadow: 10px 10px 10px black;
+}
+
+h1 {
+    font-size: 34px;
+    margin: .5rem 5rem;
+}
+
+.links a {
+    padding: 2rem;
+    margin: 0 2rem;
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+
+.links a:hover {
+    border-color: lightgray;
+    cursor: pointer;
+    opacity: .7;
+}
+
+/* ------------------------------------------------------------------------ */
+.about {
+    padding: 5rem 5rem 0;
+}
+
+.about-quote {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 24px;
 }
 
-.alternate-sections .img-link {
-    width: 100%;
+.about-me {
+    display: flex;
+    text-align: center;
+    margin-top: 3rem;
 }
-.alternate-sections .project-link {
+
+.about-description {
+    margin: 5rem;
+    font-size: 24px;
+}
+
+.resume {
     margin: 1rem;
-    width: 100%;
 }
 
-.project-tech {
-    font-style: italic;
+.resume img {
+    width: 5vw;
+}
+
+.resume button {
+    border: 1px solid black;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.resume button:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+/* ------------------------------------------------------------------------ */
+.projects {
+    padding: 5rem 5rem 0;
+}
+
+.projects-content {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.project-link {
+    position: relative;
+    margin: 1rem;
+}
+
+.project-info {
+    position: absolute;
+    display: flex;
+    top: 70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--quaternary);
+    visibility: hidden;
+    color: black;
+}
+
+.project-info p {
+    margin: .5rem 1rem 0;
 }
 
 .project-github {
-    width: 2rem;
+    margin: .5rem 1rem;
 }
 
-.contact-error {
-    color: red;
+.project-link:hover .project-info {
+    visibility: visible;
+    opacity: .9;
 }
 
-.footer-container {
-    margin: 2rem;
-    color: white;
+.img-link {
+    width: 100%;
 }
 
-.footer-container a {
-    margin: 1rem;
-    color: white;
+/* ------------------------------------------------------------------------ */
+.skills {
+    padding: 5rem 5rem 0;
+    font-size: 20px;
 }
 
-.footer-container img {
-    width: 2rem;
+.skill-list {
+    margin-top: 3rem;
 }
 
-/* Media Queries */
-@media (min-width: 576px) {
-    body {
-        text-align: center;
-    }
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-cards img {
+    width: 65%;
+}
+
+.skill-cards button {
+    border: 1px solid black;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'IM Fell English SC', serif;
+    background-color: lightgray;
+    width: 7vw;
+    height: 16vh;
+    margin: 1rem 1rem;
+}
+
+.skill-cards button:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+/* ------------------------------------------------------------------------ */
+.contact {
+    padding: 5rem;
+}
+
+form {
+    background-color: var(--quaternary);
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 3rem;
+    width: 50%;
+    border-radius: .5rem;
+    box-shadow: 10px 10px 10px black;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form h3 {
+    margin: 0 0 2rem;
+}
+
+input {
+    width: 60%;
+    height: 1.5rem;
+    border-radius: .5rem;
+    background-color: lightgray;
+    border: none;
+    font-family: 'IM Fell English SC', serif;
+}
+
+textarea {
+    margin: 1rem 0 0;
+    width: 60%;
+    font-family: 'IM Fell English SC', serif;
+    border-radius: .5rem;
     
-    body:after {
-        background-image: url('./images/night_sky.jpg');
-        background-position: center;
-        content: "";
-        position: fixed; /* stretch a fixed position to the whole screen */
-        top: 0;
-        height: 100vh; /* fix for mobile browser address bar appearing disappearing */
-        left: 0;
-        right: 0;
-        z-index: -1; /* needed to keep in the background */
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
+    background-color: lightgray;
+}
 
-    .container {
-        clip-path: polygon(0 0, 50% 2.55%, 100% 0, 100% 97.15%, 50% 99.9%, 0 97.15%);
-        background-color: rgb(255, 255, 255, .85);
-    }
+.contact-btn button {
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'IM Fell English SC', serif;
+    background-color: lightgray;
+}
 
-    .header {
-        margin: 22rem 0 15rem;
-        color: white;
-        font-size: 14px;
-    }
+.contact-btn button:hover {
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------ */
+.footer {
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer img {
+    width: 2vw;
+    margin: 1rem;
+}
+
+/* ------------------------------------------------------------------------ */
+@media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
-    body {
-        text-align: center;
-    }
-    
-    body:after {
-        background-image: url('./images/night_sky.jpg');
-        background-position: center;
-        content: "";
-        position: fixed; /* stretch a fixed position to the whole screen */
-        top: 0;
-        height: 100vh; /* fix for mobile browser address bar appearing disappearing */
-        left: 0;
-        right: 0;
-        z-index: -1; /* needed to keep in the background */
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .container {
-        clip-path: polygon(0 0, 50% 2.4%, 100% 0, 100% 97.2%, 50% 99.85%, 0 97.2%);
-        background-color: rgb(255, 255, 255, .85);
-    }
-
-    .header {
-        margin: 25rem 0 15rem;
-        color: white;
-        font-size: 24px;
-    }
-
-    .filter-container {
-        margin: 1rem 3.5rem;
-    }
 }
 
 @media (min-width: 992px) {
-    body {
-        background-image: url('./images/night_sky.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        margin: 0;
-        text-align: center;
-    }
-
-    .container {
-        clip-path: polygon(0 0, 50% 2.75%, 100% 0, 100% 96.9%, 50% 100%, 0 96.9%);
-        background-color: rgb(255, 255, 255, .85);
-    }
-
-    .header {
-        margin: 40rem 0 25rem;
-        color: white;
-        font-size: 28px;
-    }
-
-    .alternate-sections {
-        column-gap: 2rem;
-    }
-
-    .alternate-sections .img-link {
-        width: 100%;
-    }
-
-    .alternate-sections .project-link {
-        width: 100%;
-    }
-
-    .alternate-sections .text {
-        padding: 3rem;
-        margin: 3rem;
-        width: 100%;
-    }
-
-    .alternate-sections .text-img {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .alternate-sections .text-img:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
 }
 
 @media (min-width: 1200px) and (min-height: 975px) {
-    body {
-        background-image: url('./images/night_sky.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        margin: 0;
-        text-align: center;
-    }
-
-    .container {
-        clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 96.6%, 50% 99.9%, 0 96.6%);
-        background-color: rgb(255, 255, 255, .85);
-    }
-
-    .header {
-        margin: 20rem 0 15rem;
-        color: white;
-        font-size: 30px;
-    }
-
-    .about {
-        max-width: 70rem;
-        margin: 0 auto;
-    }
-
-    .filter-container {
-        margin: 1rem auto;
-    }
 }
 
 @media (min-width: 1200px) and (min-height: 1095px) {
-    body {
-        background-image: url('./images/night_sky.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        margin: 0;
-        text-align: center;
-    }
-
-    .header {
-        margin: 23rem 0 20rem;
-        color: white;
-        font-size: 30px;
-    }
-}
-
-@keyframes chevron-wave {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
 }
