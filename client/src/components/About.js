@@ -8,12 +8,12 @@ const About = () => {
         <div className="about">
             <div className="about-quote">
                 <blockquote cite="https://www.forbes.com/sites/erikaandersen/2013/05/31/21-quotes-from-henry-ford-on-business-leadership-and-life/#:~:text=Quality%20means%20doing%20it%20right,for%20you%20%E2%80%93%20that%20is%20success.">"Quality means doing it right when no one is looking. To do more for the world than the world does for you - that is success."</blockquote>
-                <figcaption>- Henry Ford</figcaption>
+                <figcaption className="scroll-link">- Henry Ford</figcaption>
             </div>
             <h2>About</h2>
             <div className="about-me">
                 <div className="my-photo">
-                    <img src={myPhoto} alt="" />
+                    <img src={myPhoto} alt="my german shepherd Rayleigh and I" />
                 </div>
                 <div>
                     <div className="about-description">

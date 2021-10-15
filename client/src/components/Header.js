@@ -10,7 +10,7 @@ const Header = () => {
                     <h1>Zackary Springer</h1>
                 </div>
                 <div className="links">
-                    <Link to="about" smooth={true}>About</Link>
+                    <Link to="scroll-link" smooth={true}>About</Link>
                     <Link to="projects" smooth={true}>Projects</Link>
                     <Link to="skills" smooth={true}>Skills</Link>
                     <Link to="contact" smooth={true}>Contact</Link>
