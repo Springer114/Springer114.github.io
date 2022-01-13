@@ -244,7 +244,7 @@ textarea {
 @media (min-width: 992px) {
 }
 
-@media (min-width: 1200px) and (min-height: 975px) {
+@media (min-width: 1200px) {
     body {
         text-align: start;
     }
